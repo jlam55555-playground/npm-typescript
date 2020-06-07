@@ -30,6 +30,7 @@ Note that TypeScript is installed as a devDependency so that it will not be inst
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "declaration": true,
     "sourceMap": true,
     "outDir": "./dist"
   },
@@ -40,7 +41,8 @@ Note that TypeScript is installed as a devDependency so that it will not be inst
 ```
 - `target`: JavaScript language specification for transpiled TypeScript
 - `module`: module loading type; `commonjs` or `node` are compatible with most Node packages and `require()`
-- `sourceMap`: generate TypeScript definition files, which can be used for TypeScript linting
+- `declaration`: generate TypeScript definition files, which can be used for TypeScript linting
+- `sourceMap`: allow viewing relevant source TypeScript code when debugging compiled application
 
 This will compile all of the source files in `src/` to `dist/`. Since the NPM module doesn't need the source TypeScript files, we can add `src` to `.npmignore`.
 

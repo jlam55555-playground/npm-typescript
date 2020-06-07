@@ -1,10 +1,11 @@
 {
-  "name": "@jlam55555-playground/npm-hello-world",
+  "name": "@jlam55555-playground/npm-typescript",
   "version": "0.1.0",
   "description": "Example of an NPM package built with TypeScript",
   "main": "./dist/main.js",
   "scripts": {
     "build": "tsc",
+    "clean": "rm -f ./dist/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
